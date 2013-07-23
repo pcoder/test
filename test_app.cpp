@@ -15,6 +15,8 @@ class ExampleApplication
         {
         	change1
         	change1
+        	change1
+        	change1
         	
             radio_ = &wiselib::FacetProvider<Os, Os::Radio>::get_facet( value );
             timer_ = &wiselib::FacetProvider<Os, Os::Timer>::get_facet( value );
