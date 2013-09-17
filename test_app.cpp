@@ -4,16 +4,14 @@
 
 #include "external_interface/external_interface.h"
 #include "algorithms/routing/tree/tree_routing.h"
-
+#include "test.h"
 typedef wiselib::OSMODEL Os;
 
 class ExampleApplication
 {
     public:
-    
         void init( Os::AppMainParameter& value )
         {
-        	
             radio_ = &wiselib::FacetProvider<Os, Os::Radio>::get_facet( value );
             timer_ = &wiselib::FacetProvider<Os, Os::Timer>::get_facet( value );
             debug_ = &wiselib::FacetProvider<Os, Os::Debug>::get_facet( value );
